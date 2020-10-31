@@ -1,7 +1,4 @@
 # Routes
-# This file defines all application routes (Higher priority routes first)
-# https://www.playframework.com/documentation/latest/ScalaRouting
-# ~~~~
 
-# An example controller showing a sample home page
-GET     /ping                           controllers.HomeController.ping
+GET     /ping                           controllers.MainController.ping()
+GET     /get                            controllers.MainController.getAll()

@@ -9,9 +9,4 @@ scalaVersion := "2.13.3"
 
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test
-
-// Adds additional packages into Twirl
-//TwirlKeys.templateImports += "fr.denom.controllers._"
-
-// Adds additional packages into conf/routes
-// play.sbt.routes.RoutesKeys.routesImport += "fr.denom.binders._"
+libraryDependencies += "org.reactivemongo" % "play2-reactivemongo_2.13" % "1.0.0-play28"
