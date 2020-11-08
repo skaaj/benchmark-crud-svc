@@ -7,7 +7,7 @@ import scala.util.Try
 case class User(nickname: String,
                 firstname: String,
                 lastname: String,
-                experience: Int)
+                age: Int)
 
 object User {
   implicit object UserReader extends BSONDocumentReader[User] {
@@ -16,8 +16,8 @@ object User {
         nickname <- doc.getAsTry[String]("nickname")
         firstname <- doc.getAsTry[String]("firstname")
         lastname <- doc.getAsTry[String]("lastname")
-        experience <- doc.getAsTry[Int]("experience")
-      } yield User(nickname, firstname, lastname, experience)
+        age <- doc.getAsTry[Int]("age")
+      } yield User(nickname, firstname, lastname, age)
     }
   }
 }

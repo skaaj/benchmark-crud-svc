@@ -1,4 +1,4 @@
 # Routes
 
 GET     /ping                           controllers.MainController.ping()
-GET     /get                            controllers.MainController.getAll()
+GET     /users                          controllers.MainController.getAll()
